@@ -3,7 +3,7 @@ using NServiceBus;
 using System;
 using System.Threading.Tasks;
 
-namespace Demo.FinancialDepartment
+namespace Demo.FinanceDepartment
 {
     internal class StartCustomerCreditCheckHandler : IHandleMessages<StartCustomerCreditCheck>
     {

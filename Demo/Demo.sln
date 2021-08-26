@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Frontend", "Demo.Front
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.LegalDepartment", "Demo.LegalDepartment\Demo.LegalDepartment.csproj", "{5CD8F3C1-BF20-4F2D-A1D3-515FBE93FC46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.FinancialDepartment", "Demo.FinancialDepartment\Demo.FinancialDepartment.csproj", "{81BB0652-E56A-4C90-9A2D-B46BCE307408}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.FinanceDepartment", "Demo.FinancialDepartment\Demo.FinanceDepartment.csproj", "{81BB0652-E56A-4C90-9A2D-B46BCE307408}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AccountManagementDepartment", "Demo.AccountManagementDepartment\Demo.AccountManagementDepartment.csproj", "{1079BC98-D020-4B3A-85BA-39A16B0365C5}"
 EndProject
