@@ -22,7 +22,7 @@ namespace Demo.CustomerApprovalService
 
         public async Task Handle(StartCustomerApproval message, IMessageHandlerContext context)
         {
-            //start credit check at the financial department
+            //start credit check at the finance department
             await context.Send(new StartCustomerCreditCheck
             {
                 CustomerId = Data.CustomerId
@@ -57,10 +57,11 @@ namespace Demo.CustomerApprovalService
             var areAllChecksPerformed = Data.CreditCheckResult.HasValue && Data.BackgroundCheckResult.HasValue;
             if (areAllChecksPerformed)
             {
+                var isCustomerApproved = Data.BackgroundCheckResult.Value && Data.CreditCheckResult.Value;
                 await context.Publish(new CustomerApprovalFinished
                 {
                     CustomerId = Data.CustomerId,
-                    IsApproved = Data.BackgroundCheckResult.Value && Data.CreditCheckResult.Value
+                    IsApproved = isCustomerApproved
                 });
 
                 MarkAsComplete();
@@ -74,8 +75,6 @@ namespace Demo.CustomerApprovalService
             {
                 CustomerId = Data.CustomerId
             });
-
-            MarkAsComplete();
         }
     }
 }
