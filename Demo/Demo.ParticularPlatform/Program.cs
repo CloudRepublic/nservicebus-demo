@@ -1,1 +1,4 @@
-﻿Particular.PlatformLauncher.Launch();
+﻿using System;
+
+Console.Title = "Platform Launcher";
+Particular.PlatformLauncher.Launch();

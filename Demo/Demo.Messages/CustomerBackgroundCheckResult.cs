@@ -3,9 +3,9 @@ using System;
 
 namespace Demo.Messages
 {
-    public class StartCustomerApproval : ICommand
+    public class CustomerBackgroundCheckResult : IMessage
     {
         public Guid CustomerId { get; set; }
-        public string Name { get; set; }
+        public bool IsApproved { get; set; }
     }
 }

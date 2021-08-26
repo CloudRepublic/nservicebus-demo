@@ -3,9 +3,8 @@ using System;
 
 namespace Demo.Messages
 {
-    public class StartCustomerApproval : ICommand
+    public class StartCustomerCreditCheck : ICommand
     {
         public Guid CustomerId { get; set; }
-        public string Name { get; set; }
     }
 }

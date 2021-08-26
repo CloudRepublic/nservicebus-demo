@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="NServiceBus" Version="7.5.0" />
-    <PackageReference Include="NServiceBus.Metrics.ServiceControl" Version="3.0.6" />
   </ItemGroup>
 
   <ItemGroup>
